@@ -1,0 +1,28 @@
+$site-hero-height: 547px;
+
+.site-hero {
+  background: url('../img/liz_mel_hero.png') top left no-repeat;
+  height: $site-hero-height;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 40em) {
+    background-position: left center;
+  }
+}
+
+.site-hero-content {
+  max-width: $global-width;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  h1 {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 40em) {
+    padding-left: 50%;
+  }
+}

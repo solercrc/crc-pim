@@ -1,0 +1,14 @@
+$topbar-left-logo-bg: #FFFFFF;
+
+.topbar-left-logo {
+  background: $topbar-left-logo-bg;
+  border-bottom: 1px solid #e1e1e1;
+
+  .menu {
+    background: $topbar-left-logo-bg;
+
+    a {
+      color: $black;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+$crc-benefits-section-width: 900px;
+
+.crc-benefits-section {
+  text-align: center;
+  padding: 2rem 0;
+
+  .row {
+    max-width: $crc-benefits-section-width;
+  }
+
+  .columns {
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 40em) {
+      margin-bottom: 0;
+    }
+  }
+
+  img.benefits-icon {
+    width: 54px;
+    height: 44px;
+    margin-bottom: 20px;
+  }
+}
+
+.crc-benefits-section-headline {
+  margin-bottom: 2rem;
+  font-size: 24px;
+}
