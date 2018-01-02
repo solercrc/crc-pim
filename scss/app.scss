@@ -2,26 +2,19 @@
 
 @import 'settings';
 @import 'foundation';
-@import 'motion-ui';
 
 @include foundation-global-styles;
 @include foundation-flex-grid;
-@include foundation-grid;
 @include foundation-xy-grid-classes;
 @include foundation-forms;
 @include foundation-typography;
 @include foundation-callout;
-@include foundation-float-classes;
 @include foundation-flex-classes;
 
 @include foundation-prototype-classes;
-
-@include motion-ui-transitions;
-@include motion-ui-animations;
 
 @import 'components/building-blocks/custom';
 
 @include foundation-button;
 @include foundation-close-button;
-@include foundation-visibility-classes;
 
