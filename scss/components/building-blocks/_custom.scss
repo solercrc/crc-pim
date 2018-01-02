@@ -1,0 +1,697 @@
+/*******************/
+/*! GLOBAL STYLES  */
+/*******************/
+.grid-container {
+	overflow: hidden;
+}
+
+/****************************/
+/*! HEADER/TOP-BAR SECTION  */
+/****************************/
+header.topbar-header {
+	font-size: 16px;
+	line-height: 20px;
+	padding: 45px 0 10px;
+	border-bottom: 1px solid #e1e1e1;
+}
+.top-bar-left,
+.header-message {
+	margin-bottom: 20px;
+}
+
+.callout.dark-one {
+	background-color: $dark-one;
+	color: $white;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 70px;
+}
+.callout.dark-one p {
+	font-size: 22px;
+	line-height: 29px;
+}
+.callout.ligt-one {
+	background-color: $light-one;
+}
+
+/*****************************/
+/*! MAIN HERO IMAGE SECTION  */
+/*****************************/
+$site-hero-height: 547px;
+.site-hero {
+	background: url('../img/liz_mel_hero.png') top left no-repeat;
+	height: $site-hero-height;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	
+	@media screen and (min-width: 40em) {
+		background-position: left center;
+	}
+}
+.site-hero-content {
+	margin: 0 auto;
+	padding-left: 58%;
+	padding-right: 30px;
+
+	h1 {
+		font-size: 70px;
+		font-weight: 300;
+		color: #eb143d;
+	}
+	.hero-sub-medium {
+		font-weight: 500;
+		margin-bottom: 0;
+		font-size: 22px;
+		line-height: 1;
+		margin-bottom: 10px;
+		color: #222222;
+	}
+	.hero-sub-light {
+		font-weight: 300;
+		font-size: 28px;
+		line-height: 34px;
+		color: #222222;
+	}
+}
+
+
+
+/******************************/
+/*! CRC PIM BENEFITS SECTION  */
+/******************************/
+.crc-benefits-section {
+	text-align: center;
+	margin-bottom: 40px;
+}
+img.benefits-icon {
+	width: 54px;
+	height: 44px;
+	margin-bottom: 20px;
+}
+.crc-benefits-section-headline {
+	margin-bottom: 50px;
+	font-size: 32px;
+	line-height: 1;
+	color: #4c2323;
+}
+.crc-benefits-section-desc {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 0;
+}
+.benefit-item {
+	margin: 0 10px 40px;
+}
+
+
+/****************************/
+/*! PRODUCT ASSETS SECTION  */
+/****************************/
+.product-assets-section {
+	background-color: $light-one;
+	margin-bottom: 64px;
+}
+.product-assets-section-headline {
+	font-size: 25px;
+	line-height: 31px;
+	color: #4c2323;
+	padding-top: 56px;
+}
+.product-assets-section-subheadline {
+	font-size: 18px;
+	line-height: 22px;
+	color: #303030;
+	margin-bottom: 55px;
+}
+.centered-item {
+	position: relative;
+	top: 195px;
+	text-decoration: none;
+	display: block;
+	margin: 0 auto;
+	width: 337px;
+	max-width: 100%;
+	height: 246px;
+}
+.circle-items {
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 75px);
+	width: 150px;
+	height: 150px;
+}
+.circular-content {
+	position: relative;
+	height: 770px;
+}
+.circle-items .animatedParent {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+}
+.circle-item {
+	@include box(150px, 150px, true);
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	background-color: #2f2f2f;
+	font-size: 18px;
+	line-height: 24px;
+}
+span.circle-inner,
+span.small-screen-circle-inner {
+	color: white;
+	position: relative;
+}
+
+.small-screen-asset-section {
+	display: none;
+}
+.small-screen-asset-section .product-assets-section {
+	padding-bottom: 40px;
+}
+.small-screen-circle-item {
+	@include box(150px, 150px, true);
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	background-color: #2f2f2f;
+	font-size: 18px;
+	line-height: 24px;
+	position: relative;
+	margin: 0 auto 30px;
+}
+img.small-screen-laptop-img {
+	width: 337px;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+
+
+ @media screen and (max-width: 700px) {
+	.circle-items {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: auto;
+		height: auto;
+	}
+	
+	.circle-item {
+		position: relative;
+		margin: 0 auto;
+		top: auto !important;
+		left: auto !important;
+		right: auto !important;
+	}
+	
+	.centered-item {
+		top: 0;
+		height: auto;
+	}
+	
+	.circular-content {
+		height: auto;
+	}
+}
+
+
+
+
+/*****************************/
+/*! TARGET AUDIENCE SECTION  */
+/*****************************/
+.target-audience-section {
+	margin-bottom: 65px;
+}
+.target-audience-right-headline {
+	color: #4c2323;
+	font-size: 25px;
+	line-height: 31px;
+}
+.target-audience-right-subheadline {
+	font-size: 17px;
+	line-height: 22px;
+	color: #303030;
+	margin-bottom: 0;
+}
+.target-audience-left {
+	border-bottom: 1px solid #989898;
+}
+.target-audience-bg {
+	background: url(../img/target-audience.png);
+	width: 423px;
+	height: 238px;
+	max-width: 100%;
+	max-height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: bottom;
+}
+
+
+
+
+/********************************/
+/*! COMPELLING PRODUCT SECTION  */
+/********************************/
+.crc-compelling-section {
+	border-top: 1px solid #303030;
+	border-bottom: 1px solid #303030;
+	padding-top: 55px;
+	padding-bottom: 20px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+.crc-compelling-section-headline {
+	color: #4c2323;
+	font-size: 25px;
+	line-height: 31px;
+}
+.crc-compelling-section-subheadline {
+	font-size: 18px;
+	line-height: 22px;
+	color: #303030;
+	margin-bottom: 30px;
+}
+.compelling-circle {
+	@include box(128px, 128px, true);
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 500;
+	font-style: italic;
+}
+ @media screen and (max-width: 700px) {
+
+}
+
+
+
+/****************************/
+/*! SIMPLIFY TOOLS SECTION  */
+/****************************/
+.simplify-tools-section {
+	margin: 0;
+}
+.simplify-tools-left-headline {
+	color: #4c2323;
+	font-size: 25px;
+	line-height: 31px;
+}
+.simplify-tools-left-subheadline {
+	font-size: 18px;
+	line-height: 22px;
+	color: #303030;
+	margin-bottom: 0;
+}
+.simplify-tools-bg {
+	background: url(../img/boxes-graphic.png) bottom no-repeat;
+	width: 386px;
+	height: 387px;
+	max-width: 100%;
+	max-height: 100%;
+	background-size: contain;
+}
+
+
+
+/***************************/
+/*! SAAS PITFALLS SECTION  */
+/***************************/
+.saas-pitfalls-section {
+	color: #FFFFFF;
+	background-color: #7fbbc3;
+	padding: 75px 0 60px;
+	margin-bottom: 65px;
+}
+
+.saas-pitfalls-left-headline {
+	font-size: 25px;
+	line-height: 31px;
+}
+.saas-pitfalls-subheadline {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 0;
+}
+.saas-pitfalls-block {
+	margin-bottom: 25px;
+}
+.saas-pitfalls-block p {
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 500;
+	font-style: italic;
+	margin-bottom: 0;
+}
+.saas-pitfalls-block img {
+	float: left;
+	margin-right: 25px;
+}
+.saas-pitfalls-table tbody {
+	border: none;
+	background-color: transparent;
+}
+.saas-pitfalls-table td {
+	padding: 0;
+}
+.saas-pitfalls-table tr:nth-child(even) {
+	background-color: transparent;
+}
+table.saas-pitfalls-table {
+	margin-bottom: 0;
+}
+
+
+
+/************************/
+/*! CONTACT US SECTION  */
+/************************/
+.contact-section {
+	margin-bottom: 65px;
+	color: #303030;
+}
+label {
+	color: #303030;
+}
+.contact-headline {
+	font-size:  34px;
+	line-height: 33px;
+}
+.contact-subheadline {
+	font-size: 22px;
+	line-height: 25px;
+	margin-bottom: 50px;
+}
+.contact-section .form-label {
+	font-size:  16px;
+	line-height: 31px;
+}
+.contact-section textarea,
+.contact-section [type='text'],
+.contact-section [type='email'],
+.contact-section [type='tel'] {
+	box-shadow: none;
+	border: 1px solid #545454;
+}
+.contact-section textarea {
+	resize: vertical;
+}
+.submit_form_button {
+	font-size:  16px;
+	line-height: 1;
+	color: #FFFFFF;
+	background-color: #db0f36;
+	padding: 12px 62px 10px;
+	cursor: pointer;
+}
+.submit_form_button:hover {
+	background-color: #303030;
+}
+.contact-section .is-invalid-label,
+.contact-section .form-error {
+	color: #dc1836;
+}
+
+.contact-section .form-error {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 13px;
+	font-weight: normal;
+}
+.is-invalid-input {
+	margin-bottom: 5px;
+}
+.is-invalid-input:not(:focus) {
+	border-color: #e25469 !important;
+	background-color: rgba(220, 24, 54, 0.15);
+}
+
+
+/********************/
+/*! FOOTER SECTION  */
+/********************/
+.footer-section {
+	background-color: #db0f36;
+	color: #FFFFFF;
+	font-size: 16px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.footer-section p {
+	margin-bottom: 0;
+	line-height: 20px;
+}
+.footer-section ul {
+	margin: 0;
+	list-style-type: none;
+}
+.footer-service-list {
+	border-top: 1px solid;
+	padding-top: 10px;
+	margin-bottom: 30px;
+}
+p.footer-left-message {
+	margin-bottom: 30px;
+}
+p.crc-name-bold {
+	font-size:  18px;
+	line-height:  22px;
+	margin-bottom: 10px;
+}
+.crc-address-footer {
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+.footer-section-right {
+	padding-top: 13px;
+}
+
+
+@media screen and #{breakpoint(large down)} {
+	.callout.dark-one,
+	section.product-assets-section {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.site-hero-content {
+		padding-left: 52%;
+	}
+
+	.callout.dark-one br,
+	.saas-pitfalls-left br,
+	.simplify-tools-left br,
+	.target-audience-right br,
+	.product-assets-section-subheadline br {
+		display: none;
+	}
+
+}
+
+
+@media screen and #{breakpoint(medium down)} {
+	header.topbar-header,
+	footer.footer-section,
+	section.contact-section,
+	section.crc-benefits-section,
+	section.saas-pitfalls-section,
+	section.crc-compelling-section,
+	section.simplify-tools-section,
+	section.target-audience-section {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.callout.dark-one p {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.asset-section {
+		display: none;
+	}
+	.small-screen-asset-section {
+		display: block;
+	}
+
+
+	header.topbar-header {
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	.top-bar-left {
+		margin-bottom: 25px;
+	}
+
+	.site-hero {
+		height: auto;
+	}
+	.site-hero-content {
+		padding-left: 5%;
+		text-align: center;
+		background-color: rgba(255, 255, 255, 0.6);
+		height: 100%;
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+	.callout.dark-one br {
+		display: none;
+	}
+
+
+
+	.target-audience-left {
+		margin-bottom: 35px;
+	}
+	.target-audience-bg {
+		margin: 0 auto;
+	}
+	.target-audience-right {
+		text-align: center;
+	}
+	.target-audience-right br {
+		display: none;
+	}
+
+	.simplify-tools-left {
+		text-align: center;
+	}
+	.simplify-tools-right {
+		margin-top: 40px;
+	}
+	.simplify-tools-left br {
+		display: none;
+	}
+	.simplify-tools-bg {
+		margin: 0 auto;
+	}
+
+
+	.saas-pitfalls-left {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.saas-pitfalls-left br {
+		display: none;
+	}
+
+	.saas-pitfalls-block {
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.saas-pitfalls-block:last-of-type {
+		margin-bottom: 0;
+	}
+	.saas-pitfalls-block div {
+		display: block;
+		width: 100%;
+	}
+	.saas-pitfalls-block img {
+		float: none;
+		margin: 0 0 10px;
+	}
+
+
+	.contact-section {
+		margin-bottom: 40px;
+	}
+	section.saas-pitfalls-section {
+		margin-bottom: 50px;
+		padding-top: 50px;
+	}
+	.crc-compelling-section {
+		margin-bottom: 55px;
+		padding-top: 40px;
+	}
+	.target-audience-section {
+		margin-bottom: 50px;
+	}
+	.product-assets-section {
+		margin-bottom: 45px;
+	}
+	.crc-benefits-section {
+		margin-bottom: 25px;
+	}
+	.callout.dark-one {
+		margin-bottom: 50px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	.crc-benefits-section-headline {
+		margin-bottom: 30px;
+	}
+	.footer-section {
+		padding-top: 35px;
+	}
+
+
+}
+
+@media screen and #{breakpoint(small down)} {
+
+	.callout.dark-one,
+	footer.footer-section,
+	section.contact-section,
+	section.crc-benefits-section,
+	section.saas-pitfalls-section,
+	section.crc-compelling-section,
+	section.simplify-tools-section,
+	section.product-assets-section,
+	section.target-audience-section {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 445px) {
+	.target-audience-left {
+		margin-top: -40px;
+	}
+}
+@media screen and (max-width: 415px) {
+	.simplify-tools-right {
+		margin-top: 15px;
+	}
+	.target-audience-left {
+		margin-top: -60px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.simplify-tools-right {
+		margin-top: -20px;
+	}
+}
+@media screen and (max-width: 350px) {
+	.simplify-tools-right {
+		margin-top: -60px;
+	}
+	.target-audience-left {
+		margin-top: -80px;
+	}
+}
+@media screen and (max-width: 315px) {
+	.simplify-tools-right {
+		margin-top: -80px;
+	}
+	.target-audience-left {
+		margin-top: -100px;
+	}
+}

@@ -1,5 +1,7 @@
-$(document).ready(function() {
-	$('.circle-inner').each(function() {
+$(document).foundation();
+
+centerVertical = function(container) {
+	jQuery(container).each(function() {
 		$(this).css({
 			'position' : 'absolute',
 			'left' : '50%',
@@ -8,6 +10,11 @@ $(document).ready(function() {
 			'margin-top' : -$(this).outerHeight()/2
 		});
 	});
-});
+}
 
-$(document).foundation();
+$(document).ready(function() {
+	centerVertical('.circle-inner, .compelling-circle-inner, .small-screen-circle-inner');
+});
+$(window).resize(function() {
+	centerVertical('.circle-inner, .compelling-circle-inner, .small-screen-circle-inner');
+});
