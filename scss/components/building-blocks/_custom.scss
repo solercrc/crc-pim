@@ -552,7 +552,7 @@ a.footer-link-white:hover {
 	}
 	.site-hero-content {
 		text-align: center;
-		background-color: rgba(255,255,255,0.6);
+		background-color: #eb143d;
 		height: 100%;
 		padding-top: 45px;
 		padding-bottom: 45px;
@@ -561,6 +561,19 @@ a.footer-link-white:hover {
 		right: auto;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	.site-hero-content h1 {
+		font-size: 60px;
+		color: #ffffff;
+	}
+	.site-hero-content .hero-sub-medium {
+		font-size: 18px;
+		color: #ffffff;
+	}
+	.site-hero-content .hero-sub-light {
+		font-size: 23px;
+		line-height: 27px;
+		color: #ffffff;
 	}
 
 	.callout.dark-one br {
@@ -584,9 +597,10 @@ a.footer-link-white:hover {
 
 	.simplify-tools-left {
 		text-align: center;
+		margin-bottom: 50px;
 	}
 	.simplify-tools-right {
-		margin-top: 40px;
+		display: none;
 	}
 	.simplify-tools-left br {
 		display: none;
@@ -682,30 +696,16 @@ a.footer-link-white:hover {
 	}
 }
 @media screen and (max-width: 415px) {
-	.simplify-tools-right {
-		margin-top: 15px;
-	}
 	.target-audience-left {
 		margin-top: -60px;
 	}
 }
-@media screen and (max-width: 375px) {
-	.simplify-tools-right {
-		margin-top: -20px;
-	}
-}
 @media screen and (max-width: 350px) {
-	.simplify-tools-right {
-		margin-top: -60px;
-	}
 	.target-audience-left {
 		margin-top: -80px;
 	}
 }
 @media screen and (max-width: 315px) {
-	.simplify-tools-right {
-		margin-top: -80px;
-	}
 	.target-audience-left {
 		margin-top: -100px;
 	}
