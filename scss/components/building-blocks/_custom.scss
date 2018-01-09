@@ -36,6 +36,15 @@ header.topbar-header {
 	background-color: $light-one;
 }
 
+.callout.success {
+	background-color: #ddf7ff;
+	border-color: #b4ccd4;
+}
+.callout.alert {
+	background-color: #ffdfe4;
+	border-color: #e0bfc4;
+}
+
 /*****************************/
 /*! MAIN HERO IMAGE SECTION  */
 /*****************************/
